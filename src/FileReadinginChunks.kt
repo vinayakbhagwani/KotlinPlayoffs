@@ -10,8 +10,8 @@ fun main() {
 }
 
 suspend fun fastCopyToAnotherFile() {
-    val inputFile = "C:/Users/vinay/Desktop/inputfile.txt"
-    val outputFile = "C:/Users/vinay/Desktop/outputfile.txt"
+    val inputFile = "inputfile.txt"
+    val outputFile = "outputfile.txt"
     val lines = File(inputFile).readLines()
 
     val resultMap = ConcurrentHashMap<Int, Int>()
